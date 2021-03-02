@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/script.js"></script>
   </head>
   <body>
     <header>
@@ -22,7 +21,7 @@
     <main>
       <div class="main__top">
         <div class="main__menu">
-          <h2 class="main__logo">Aurora</h2>
+          <h2 class="main__logo change">Aurora</h2>
 
           <div class="main__menu--center">
             <form action="" method="post" class="search">
@@ -37,23 +36,27 @@
             </form>
             <div>
               <ul class="main__menu--options">
-                <li id="a"><a href="#home" class="active">WHAT'S NEW</a></li>
-                <li><a href="#home" class="active">WOOMEN</a></li>
-                <li><a href="#home" class="active">ACCESSORIES</a></li>
-                <li><a href="#home" class="active">KIDS</a></li>
-                <li><a href="#home" class="active">BEAUTY</a></li>
-                <li><a href="#home" class="active">OUTLET</a></li>
-                <li><a href="#home" class="active">STORIES</a></li>
+                <li id="a">
+                  <a href="#home" class="active change">WHAT'S NEW</a>
+                </li>
+                <li><a href="#home" class="active change">WOOMEN</a></li>
+                <li><a href="#home" class="active change">ACCESSORIES</a></li>
+                <li><a href="#home" class="active change">KIDS</a></li>
+                <li><a href="#home" class="active change">BEAUTY</a></li>
+                <li><a href="#home" class="active change">OUTLET</a></li>
+                <li><a href="#home" class="active change">STORIES</a></li>
               </ul>
             </div>
           </div>
           <div class="main__menu--logIn">
-            <p>
-              <a href="" class="main__menu--logIn-sign">Sign in</a>
+            <p class="main__menu--logIn-wraper">
+              <a href="" class="main__menu--logIn-sign change">Sign in</a>
               |
-              <a href="#home" class="main__menu--logIn-register">Register</a>
+              <a href="#home" class="main__menu--logIn-register change"
+                >Register</a
+              >
             </p>
-            <img src="./images/bag.png" alt="bag" />
+            <img class="bag" src="./images/bag.png" alt="bag" />
           </div>
           <div class="main__menu--gradient"></div>
         </div>
@@ -149,5 +152,6 @@
         <h6>© Copyright, Aurora 2020. All Rights reserved.</h6>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>

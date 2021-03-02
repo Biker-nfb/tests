@@ -97,8 +97,6 @@ footer {
       height: 48px;
       margin-top: 24px;
 
-      /* кнопку отправки будем позиционировать абсолютно,
-	** поэтому необходимо это свойство */
       position: relative;
       z-index: 3;
       background: rgba(247, 247, 247, 0.24);
@@ -137,8 +135,31 @@ footer {
       outline: none;
     }
 
+    .input2 {
+      /* растягиваем поле ввода на всю ширину формы */
+      width: 100%;
+      height: 48px;
+
+      /* за счет верхнего (8px) и нижнего (9px) внутренних отступов
+	** регулируем высоту формы
+	** внутренний отступ справа (37px) делаем больше левого,
+	** т.к. там будет размещена кнопка отправки	*/
+      padding: 8px 37px 9px 16px;
+
+      /* чтобы ширина поля ввода (100%) включала в себя внутренние отступы */
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+
+      /* закругляем углы */
+      border-radius: 3px;
+
+      background: transparent;
+      color: black;
+      outline: none;
+    }
+
     /* оформляем кнопку отправки */
-    .search .submit {
+    .submit {
       /* позиционируем кнопку абсолютно от правого края формы */
       position: absolute;
       top: 16px;
@@ -149,7 +170,21 @@ footer {
       height: 100%;
       width: 37px;
       cursor: pointer;
-      background: url(../..//images/Fill.png) no-repeat;
+      background: url(../../images/Fill.png) no-repeat;
+    }
+
+    .submit2 {
+      /* позиционируем кнопку абсолютно от правого края формы */
+      position: absolute;
+      top: 16px;
+      right: -5px;
+      padding-right: 0;
+      padding-left: 0;
+      /* растягиваем кнопку на всю высоту формы */
+      height: 100%;
+      width: 37px;
+      cursor: pointer;
+      background: url(../../images/Fillblack.png) no-repeat;
     }
 
     /* при наведении курсора меняем прозрачность кнопки отправки */
@@ -160,7 +195,18 @@ footer {
     /* данное свойство необходимо для того, чтобы в браузерах
 ** Chrome и Safari можно было стилизовать инпуты */
 
-    input[type="search"]::-webkit-input-placeholder {
+    input[class="input2"]::-webkit-input-placeholder {
+      color: black;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 16px;
+
+      letter-spacing: 0.8px;
+    }
+
+    input[class="input"]::-webkit-input-placeholder {
       color: white;
       font-family: Poppins;
       font-style: normal;
