@@ -1,8 +1,12 @@
-var cl = document.querySelector(".main__menu--logIn-sign")
+const cl = document.querySelector(".main__menu--logIn-sign")
+const delet = document.querySelector('.main__menu--logIn-register')
 
 function click(event) {
     event.preventDefault();
 
+    cl.innerHTML = "Hi, Angels!"
+    delet.innerHTML = ""
+    
     const headerTop = document.querySelector('header')
     const mainPic = document.querySelector('.main__top')
     const header = document.querySelector('.main__menu')

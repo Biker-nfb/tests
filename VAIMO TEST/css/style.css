@@ -71,10 +71,7 @@ footer {
     height: 140px;
     max-width: 1440px;
     /* стили для поля ввода */
-    /* оформляем кнопку отправки */
-    /* при наведении курсора меняем прозрачность кнопки отправки */
-    /* данное свойство необходимо для того, чтобы в браузерах
-** Chrome и Safari можно было стилизовать инпуты */ }
+    /* оформляем кнопку отправки */ }
     .main__top .main__menu .main__logo {
       margin-left: 24px;
       margin-top: 16px;
@@ -162,13 +159,11 @@ footer {
       cursor: pointer;
       background: url(../../images/Fill.png) no-repeat; }
     .main__top .main__menu .submit2 {
-      /* позиционируем кнопку абсолютно от правого края формы */
       position: absolute;
       top: 16px;
       right: -5px;
       padding-right: 0;
       padding-left: 0;
-      /* растягиваем кнопку на всю высоту формы */
       height: 100%;
       width: 37px;
       cursor: pointer;
@@ -200,6 +195,15 @@ footer {
       font-size: 11px;
       line-height: 16px;
       letter-spacing: 0.8px; }
+    .main__top .main__menu input[type="search2"]:-moz-placeholder {
+      /* Firefox 18- */
+      color: black;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 16px;
+      letter-spacing: 0.8px; }
     .main__top .main__menu input[type="search"]::-moz-placeholder {
       /* Firefox 19+ */
       color: white;
@@ -209,8 +213,25 @@ footer {
       font-size: 11px;
       line-height: 16px;
       letter-spacing: 0.8px; }
+    .main__top .main__menu input[type="search2"]::-moz-placeholder {
+      /* Firefox 19+ */
+      color: black;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 16px;
+      letter-spacing: 0.8px; }
     .main__top .main__menu input[type="search"]:-ms-input-placeholder {
       color: white;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 16px;
+      letter-spacing: 0.8px; }
+    .main__top .main__menu input[type="search2"]:-ms-input-placeholder {
+      color: black;
       font-family: Poppins;
       font-style: normal;
       font-weight: 500;

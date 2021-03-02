@@ -174,26 +174,21 @@ footer {
     }
 
     .submit2 {
-      /* позиционируем кнопку абсолютно от правого края формы */
       position: absolute;
       top: 16px;
       right: -5px;
       padding-right: 0;
       padding-left: 0;
-      /* растягиваем кнопку на всю высоту формы */
+
       height: 100%;
       width: 37px;
       cursor: pointer;
       background: url(../../images/Fillblack.png) no-repeat;
     }
 
-    /* при наведении курсора меняем прозрачность кнопки отправки */
     .search .submit:hover {
       opacity: 0.5;
     }
-
-    /* данное свойство необходимо для того, чтобы в браузерах
-** Chrome и Safari можно было стилизовать инпуты */
 
     input[class="input2"]::-webkit-input-placeholder {
       color: black;
@@ -229,6 +224,18 @@ footer {
       letter-spacing: 0.8px;
     }
 
+    input[type="search2"]:-moz-placeholder {
+      /* Firefox 18- */
+      color: black;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 16px;
+
+      letter-spacing: 0.8px;
+    }
+
     input[type="search"]::-moz-placeholder {
       /* Firefox 19+ */
       color: white;
@@ -241,8 +248,31 @@ footer {
       letter-spacing: 0.8px;
     }
 
+    input[type="search2"]::-moz-placeholder {
+      /* Firefox 19+ */
+      color: black;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 16px;
+
+      letter-spacing: 0.8px;
+    }
+
     input[type="search"]:-ms-input-placeholder {
       color: white;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 16px;
+
+      letter-spacing: 0.8px;
+    }
+
+    input[type="search2"]:-ms-input-placeholder {
+      color: black;
       font-family: Poppins;
       font-style: normal;
       font-weight: 500;
