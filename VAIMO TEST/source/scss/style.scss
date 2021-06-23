@@ -66,8 +66,9 @@ footer {
 
 .main__top {
   max-width: var(--width);
+  min-width: 900px;
   height: 756px;
-  background: url(../../images/9193579.png) no-repeat;
+  background: url(../../images/9193579.png) no-repeat center;
   margin: auto;
 
   .main__menu {
